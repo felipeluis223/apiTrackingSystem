@@ -39,12 +39,11 @@ app.get("/users", (req, res)=>{
                 name: response.name.first,
                 lastName: response.name.last,
                 age: response.dob.age,
-                city: response.location.street.city,
+                city: response.location.city,
                 email: response.email,
                 cell: response.cell,
                 username: response.login.username,
-                password: response.login.password,
-                picture: response.picture.large
+                password: response.login.password
             };
             users.push(obj)
         }
